@@ -15,41 +15,41 @@
         }
     </style>
 </head>
-    
+
 <body>
 <div class='wrapper'>
     <div class='pad1'>
         <h1><a href="../../index.html">All files</a> / <a href="index.html">react-grid-layout/lib</a> ReactGridLayout.jsx</h1>
         <div class='clearfix'>
-            
+
             <div class='fl pad1y space-right2'>
                 <span class="strong">48.46% </span>
                 <span class="quiet">Statements</span>
                 <span class='fraction'>95/196</span>
             </div>
-        
-            
+
+
             <div class='fl pad1y space-right2'>
                 <span class="strong">52.63% </span>
                 <span class="quiet">Branches</span>
                 <span class='fraction'>70/133</span>
             </div>
-        
-            
+
+
             <div class='fl pad1y space-right2'>
                 <span class="strong">50% </span>
                 <span class="quiet">Functions</span>
                 <span class='fraction'>13/26</span>
             </div>
-        
-            
+
+
             <div class='fl pad1y space-right2'>
                 <span class="strong">51.66% </span>
                 <span class="quiet">Lines</span>
                 <span class='fraction'>93/180</span>
             </div>
-        
-            
+
+
         </div>
         <p class="quiet">
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
@@ -1689,7 +1689,7 @@
 import * as React from "react";
 &nbsp;
 import { deepEqual } from "fast-equals";
-import classNames from "classnames";
+import clsx from "clsx";
 import {
   bottom,
   childrenEqual,
@@ -2232,7 +2232,7 @@ export default class ReactGridLayout extends React.Component&lt;Props, State&gt;
         x={activeDrag.x}
         y={activeDrag.y}
         i={activeDrag.i}
-        className={classNames("react-grid-placeholder", {
+        className={clsx("react-grid-placeholder", {
           "placeholder-resizing": Boolean(this.state.resizing)
         })}
         containerWidth={width}
@@ -2469,7 +2469,7 @@ export default class ReactGridLayout extends React.Component&lt;Props, State&gt;
   render(): React.Element&lt;"div"&gt; {
     const { className, style, isDroppable, innerRef } = this.props;
 &nbsp;
-    const mergedClassName = classNames(layoutClassName, className);
+    const mergedClassName = clsx(layoutClassName, className);
     const mergedStyle = {
       height: this.containerHeight(),
       ...style
@@ -2515,4 +2515,3 @@ export default class ReactGridLayout extends React.Component&lt;Props, State&gt;
         <script src="../../block-navigation.js"></script>
     </body>
 </html>
-    

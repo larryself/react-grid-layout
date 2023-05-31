@@ -15,41 +15,41 @@
         }
     </style>
 </head>
-    
+
 <body>
 <div class='wrapper'>
     <div class='pad1'>
         <h1><a href="../../index.html">All files</a> / <a href="index.html">react-grid-layout/lib</a> GridItem.jsx</h1>
         <div class='clearfix'>
-            
+
             <div class='fl pad1y space-right2'>
                 <span class="strong">70.73% </span>
                 <span class="quiet">Statements</span>
                 <span class='fraction'>116/164</span>
             </div>
-        
-            
+
+
             <div class='fl pad1y space-right2'>
                 <span class="strong">70.23% </span>
                 <span class="quiet">Branches</span>
                 <span class='fraction'>59/84</span>
             </div>
-        
-            
+
+
             <div class='fl pad1y space-right2'>
                 <span class="strong">65.21% </span>
                 <span class="quiet">Functions</span>
                 <span class='fraction'>15/23</span>
             </div>
-        
-            
+
+
             <div class='fl pad1y space-right2'>
                 <span class="strong">71.52% </span>
                 <span class="quiet">Lines</span>
                 <span class='fraction'>108/151</span>
             </div>
-        
-            
+
+
         </div>
         <p class="quiet">
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
@@ -1479,7 +1479,7 @@ import {
   resizeHandleAxesType,
   resizeHandleType
 } from "./ReactGridLayoutPropTypes";
-import classNames from "classnames";
+import clsx from "clsx";
 import type { Element as ReactElement, Node as ReactNode } from "react";
 &nbsp;
 import type {
@@ -2130,7 +2130,7 @@ export default class GridItem extends React.Component&lt;Props, State&gt; {
     // Create the child element. We clone the existing element but modify its className and style.
     let newChild = React.cloneElement(child, {
       ref: this.elementRef,
-      className: classNames(
+      className: clsx(
         "react-grid-item",
         child.props.className,
         this.props.className,
@@ -2179,4 +2179,3 @@ export default class GridItem extends React.Component&lt;Props, State&gt; {
         <script src="../../block-navigation.js"></script>
     </body>
 </html>
-    
