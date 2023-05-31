@@ -585,6 +585,7 @@ export default class GridItem extends React.Component<Props, State> {
     const handler = this.props[handlerName];
     if (!handler) return;
     const { cols, x, y, i, maxH, minH } = this.props;
+    // eslint-disable-next-line prefer-const
     let { minW, maxW } = this.props;
 
     // Get new XY
